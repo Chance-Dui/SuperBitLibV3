@@ -2,7 +2,7 @@
 Copyright (C): 2021-2025, yulin Blue Origin
 modified from liusen
 load dependency
-"SuperBitV2": "file:../pxt-SuperBitV2"
+"SuperBitV3": "file:../pxt-SuperBitV3"
 */
 
 //% color="#ECA40D" weight=30 icon="\uf135"
