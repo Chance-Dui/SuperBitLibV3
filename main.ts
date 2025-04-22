@@ -1,4 +1,4 @@
-﻿/*
+/*
 Copyright (C): 2021-2025, yulin Blue Origin
 modified from liusen
 load dependency
@@ -210,7 +210,7 @@ namespace SuperBitV3 {
      * *****************************************************************
      * @param index
      */   
-    //% blockId=SuperBitV2_RGB_Program block="RGB_Program"
+    //% blockId=SuperBitV3_RGB_Program block="RGB_Program"
     //% weight=99
     //% blockGap=10
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
@@ -222,7 +222,7 @@ namespace SuperBitV3 {
         return yahStrip;  
     } 
     
-    //% blockId=SuperBitV2_Music block="Music|%index"
+    //% blockId=SuperBitV3_Music block="Music|%index"
     //% weight=98
     //% blockGap=10
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
@@ -251,7 +251,7 @@ namespace SuperBitV3 {
         }
     }
     
-    //% blockId=SuperBitV2_Servo block="Servo(180°)|num %num|value %value"
+    //% blockId=SuperBitV3_Servo block="Servo(180°)|num %num|value %value"
     //% weight=97
     //% blockGap=10
     //% num.min=1 num.max=4 value.min=0 value.max=180
@@ -265,7 +265,7 @@ namespace SuperBitV3 {
 
     }
 
-    //% blockId=SuperBitV2_Servo2 block="Servo(270°)|num %num|value %value"
+    //% blockId=SuperBitV3_Servo2 block="Servo(270°)|num %num|value %value"
     //% weight=96
     //% blockGap=10
     //% num.min=1 num.max=4 value.min=0 value.max=270
@@ -280,7 +280,7 @@ namespace SuperBitV3 {
 
     }
 
-    //% blockId=SuperBitV2_Servo3 block="Servo(360°)|num %num|pos %pos|value %value"
+    //% blockId=SuperBitV3_Servo3 block="Servo(360°)|num %num|pos %pos|value %value"
     //% weight=96
     //% blockGap=10
     //% num.min=1 num.max=4 value.min=0 value.max=90
@@ -309,7 +309,7 @@ namespace SuperBitV3 {
 
     }
 
-    //% blockId=SuperBitV2_Servo4 block="Servo(360°_rotatable)|num %num|pos %pos|value %value"
+    //% blockId=SuperBitV3_Servo4 block="Servo(360°_rotatable)|num %num|pos %pos|value %value"
     //% weight=96
     //% blockGap=10
     //% num.min=1 num.max=4 value.min=0 value.max=90
@@ -339,7 +339,7 @@ namespace SuperBitV3 {
     }
     
    
-    //% blockId=SuperBitV2_MotorRun block="Motor|%index|speed(-255~255) %speed"
+    //% blockId=SuperBitV3_MotorRun block="Motor|%index|speed(-255~255) %speed"
     //% weight=93
     //% speed.min=-255 speed.max=255
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
@@ -380,7 +380,7 @@ namespace SuperBitV3 {
         
     }
 
-    //% blockId=SuperBitV2_MotorRunDual block="Motor|%motor1|speed %speed1|%motor2|speed %speed2"
+    //% blockId=SuperBitV3_MotorRunDual block="Motor|%motor1|speed %speed1|%motor2|speed %speed2"
     //% weight=92
     //% blockGap=50
     //% speed1.min=-255 speed1.max=255
@@ -391,7 +391,7 @@ namespace SuperBitV3 {
         MotorRun(motor2, speed2);
     }
 
-    //% blockId=SuperBitV2_MotorStopAll block="Motor Stop All"
+    //% blockId=SuperBitV3_MotorStopAll block="Motor Stop All"
     //% weight=91
     //% blockGap=50
     export function MotorStopAll(): void {
@@ -409,7 +409,7 @@ namespace SuperBitV3 {
 }
 
 //% color="#228B22" weight=25 icon="\uf0b2"
-namespace SuperBitV2_Digital {
+namespace SuperBitV3_Digital {
 	
     export enum mwDigitalNum {
         //% blockId="P4P6" block="P4P6"
@@ -567,7 +567,7 @@ namespace SuperBitV2_Digital {
     }
 
 
-    //% blockId=SuperBitV2_Digital_Ultrasonic block="Ultrasonic|pin %value_DNum"
+    //% blockId=SuperBitV3_Digital_Ultrasonic block="Ultrasonic|pin %value_DNum"
     //% weight=97
     //% blockGap=20
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=5
@@ -595,7 +595,7 @@ namespace SuperBitV2_Digital {
         return Math.idiv(d, 58);
     }
 
-    //% blockId=SuperBitV2_Digital_IR block="IR|pin %value_DNum|value %value"
+    //% blockId=SuperBitV3_Digital_IR block="IR|pin %value_DNum|value %value"
     //% weight=96
     //% blockGap=20
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=5
@@ -612,7 +612,7 @@ namespace SuperBitV2_Digital {
         return pins.digitalReadPin(pin) == value;
     }
 
-    //% blockId=SuperBitV2_Digital_PIR block="PIR|pin %value_DNum|value %value"
+    //% blockId=SuperBitV3_Digital_PIR block="PIR|pin %value_DNum|value %value"
     //% weight=96
     //% blockGap=20
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=5
@@ -630,7 +630,7 @@ namespace SuperBitV2_Digital {
         return pins.digitalReadPin(pin) == value;
     }
 	
-    //% blockId=SuperBitV2_Digital_Collision block="Collision|pin %value_DNum|value %value"
+    //% blockId=SuperBitV3_Digital_Collision block="Collision|pin %value_DNum|value %value"
     //% weight=3
     //% blockGap=20
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=5
@@ -648,7 +648,7 @@ namespace SuperBitV2_Digital {
         return pins.digitalReadPin(pin) == value;
     }
 
-    //% blockId=SuperBitV2_Digital_Button block="Button|pin %value_DNum|value %value"
+    //% blockId=SuperBitV3_Digital_Button block="Button|pin %value_DNum|value %value"
     //% weight=3
     //% blockGap=20
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=5
@@ -665,7 +665,7 @@ namespace SuperBitV2_Digital {
         pins.setPull(pin, PinPullMode.PullUp);
         return pins.digitalReadPin(pin) == value;
     }
-    //% blockId=SuperBitV2_Digital_Vibration block="Vibration|pin %value_DNum|get "
+    //% blockId=SuperBitV3_Digital_Vibration block="Vibration|pin %value_DNum|get "
     //% weight=1
     //% blockGap=20
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=5
@@ -687,7 +687,7 @@ namespace SuperBitV2_Digital {
 }
 
 //% color="#C814B8" weight=24 icon="\uf080"
-namespace SuperBitV2_Analog {
+namespace SuperBitV3_Analog {
 
     export enum enRocker {
         //% blockId="NoState" block="NoState"
@@ -720,7 +720,7 @@ namespace SuperBitV2_Analog {
         AP0P3 = 2
     }	
 
-    //% blockId=SuperBitV2_Anaglog_Light block="Light|pin %value_ANum"
+    //% blockId=SuperBitV3_Anaglog_Light block="Light|pin %value_ANum"
     //% weight=100
     //% blockGap=20
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=5 
@@ -737,7 +737,7 @@ namespace SuperBitV2_Analog {
         //return 0;
     }
 	
-    //% blockId=SuperBitV2_Anaglog_Sound block="Sound|pin %value_ANum"
+    //% blockId=SuperBitV3_Anaglog_Sound block="Sound|pin %value_ANum"
     //% weight=99
     //% blockGap=20
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=5
@@ -753,7 +753,7 @@ namespace SuperBitV2_Analog {
         return value;
         //return 0;
     }
-	//% blockId=SuperBitV2_Anaglog_Potentiometer block="Potentiometer|pin %value_ANum"
+	//% blockId=SuperBitV3_Anaglog_Potentiometer block="Potentiometer|pin %value_ANum"
     //% weight=2
     //% blockGap=20
     //% name.fieldEditor="gridpicker" name.fieldOption.columns=5
@@ -769,7 +769,7 @@ namespace SuperBitV2_Analog {
         return value;
     }
 	
-    //% blockId=SuperBitV2_Anaglog_Rocker block="Rocker|pin %value_ANum|value %value"
+    //% blockId=SuperBitV3_Anaglog_Rocker block="Rocker|pin %value_ANum|value %value"
     //% weight=1
     //% blockGap=20
     export function Rocker(value_ANum: mwAnalogNum2, value: enRocker): boolean {
@@ -813,7 +813,7 @@ namespace SuperBitV2_Analog {
 }
 
 //% color="#ECA40D" weight=22 icon="\uf085"
-namespace SuperBitV2_PWM {
+namespace SuperBitV3_PWM {
 
     export enum enColor {
         //% blockId="OFF" block="OFF"
@@ -849,7 +849,7 @@ namespace SuperBitV2_PWM {
         P5P11 = 6
     }	
 
-    //% blockId=SuperBitV2_PWM_BuzzerPin block="Set Buzzer Pin|%value_DNum"
+    //% blockId=SuperBitV3_PWM_BuzzerPin block="Set Buzzer Pin|%value_DNum"
     //% weight=99
     //% blockGap=22
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=5
@@ -864,7 +864,7 @@ namespace SuperBitV2_PWM {
 		
 		pins.setAudioPin(pinb);
     }
-    //% blockId=SuperBitV2_PWM_VibrationMot block="Vibration Motor|%value_DNum|speed %speed"
+    //% blockId=SuperBitV3_PWM_VibrationMot block="Vibration Motor|%value_DNum|speed %speed"
     //% weight=80
     //% blockGap=22
     //% speed.min=0 speed.max=1023
@@ -882,7 +882,7 @@ namespace SuperBitV2_PWM {
         pins.analogWritePin(pin, speed);
     }
 	
-    //% blockId=SuperBitV2_PWM_RGB block="RGB|(P12P13P14)|value1 %value1|value2 %value2|value3 %value3"
+    //% blockId=SuperBitV3_PWM_RGB block="RGB|(P12P13P14)|value1 %value1|value2 %value2|value3 %value3"
     //% weight=2
     //% blockGap=20
     //% value1.min=0 value1.max=255 value2.min=0 value2.max=255 value3.min=0 value3.max=255
@@ -894,7 +894,7 @@ namespace SuperBitV2_PWM {
         pins.analogWritePin(AnalogPin.P12, value3 * 1024 / 256);
     }
 	
-    //% blockId=SuperBitV2_PWM_RGB2 block="RGB|(P12P13P14)|value %value"
+    //% blockId=SuperBitV3_PWM_RGB2 block="RGB|(P12P13P14)|value %value"
     //% weight=1
     //% blockGap=20
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
