@@ -15,7 +15,7 @@
   "SuperBitV2.enPos.forward|block": "正转",
   "SuperBitV2.enPos.reverse|block": "反转",
   "SuperBitV2.enPos.stop|block": "停止",
-  "SuperBitV2.PWMOFF|block":  "关闭PWM输出|%index",
+  "SuperBitV2.PWMOFF|block":  "关闭PWM输出|%index"
   
 
 
